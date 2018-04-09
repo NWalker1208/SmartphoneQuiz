@@ -23,35 +23,38 @@ div {
 	background-color: white;
 }
 
-div.card {
+.card, .card-1, .card-2, .card-3, .card-4, .card-5 {
 	padding: 10px;
 	margin: 20px 20px;
 }
 
 /* Based on Material design at https://codepen.io/sdthornton/pen/wBZdXq */
-div.card-1 {
+.card-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-div.card-1:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-div.card-2 {
+.card-2 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-div.card-3 {
+.card-3 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-div.card-4 {
+.card-4 {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-div.card-5 {
+.card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-hoverable {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.card-hoverable:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 /* End copied code */
 
@@ -59,11 +62,20 @@ h1 {
 	width: 100%;
 	margin: 20px 0px;
 	text-align: center;
+	font-size: 2em;
+}
+
+h2 {
+	width: 100%;
+	margin: 20px 0px;
+	text-align: center;
+	font-size: 1.2em;
 }
 
 p {
 	margin: 20px 0px;
 	padding: 0px 20px;
+	font-size: 1em;
 }
 
 /* Special card styles */
@@ -85,4 +97,10 @@ p {
 .choice {
 	color: white;
 	background-color: #F44336;
+	transition: background-color 0.3s;
+}
+
+/* Red 900 */
+.choice.selected {
+	background-color: #B71C1C;
 }

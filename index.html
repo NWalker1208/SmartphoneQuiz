@@ -4,31 +4,64 @@
 <head>
 	<title>Smartphone Quiz</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<div>
-		<div class="card card-2" id="header">
+		<div class="card-2" id="header">
 			<h1>What Phone is for You?</h1>
 			<p>A personality quiz for smartphone brands</p>
 		</div>
 		
-		<div class="card card-2">
+		<div class="card-2">
 			<p>Currently under development.</p>
 			
-			<div class="card card-1 choice">
-				<p>This is a test card.</p>
+			<div class="card-1 question">
+				<h2>Question 1</h2>
 				
-				<div class="card card-3">
-					<p>This is a test sub-card.</p>
+				<p>If your computer started having issues, would you...</p>
+				
+				<div class="card-1 card-hoverable choice">
+					<p>Try to fix the problem yourself</p>
+				</div>
+				
+				<div class="card-1 card-hoverable choice">
+					<p>Have someone else fix it for you</p>
+				</div>
+			</div>
+			
+			<div class="card-1 question">
+				<h2>Question 2</h2>
+				
+				<p>Do you like to take and share photos?</p>
+				
+				<div class="card-1 card-hoverable choice">
+					<p>Yes, very often</p>
+				</div>
+				
+				<div class="card-1 card-hoverable choice">
+					<p>Yes, sometimes</p>
+				</div>
+				
+				<div class="card-1 card-hoverable choice">
+					<p>No</p>
 				</div>
 			</div>
 		</div>
 		
-		<div class="card card-1" id="footer" onclick="window.location='https://github.com/NWalker1208';">
+		<div class="card card-2 card-hoverable" id="footer" onclick="window.location='https://github.com/NWalker1208';">
 			<p>Written and designed by Nathan Walker</p>
 		</div>
 	</div>
+	
+	<script>
+		$('.choice').click(function()
+		{
+			$(this).parent().find('.choice').removeClass('selected');
+			$(this).addClass('selected');
+		});
+	</script>
 </body>
 
 </html>
