@@ -1,9 +1,11 @@
 /* Color palette based on https://material.io/guidelines/style/color.html#color-color-palette */
 
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	font-family: Arial;
 }
 
 /* Grey 200 */
@@ -18,11 +20,10 @@ body>div {
 }
 
 div {
-	font-family: Arial;
-	color: black;
 	background-color: white;
 }
 
+/* Cards */
 .card, .card-1, .card-2, .card-3, .card-4, .card-5 {
 	padding: 10px;
 	margin: 20px 20px;
@@ -58,24 +59,25 @@ div {
 }
 /* End copied code */
 
+/* Text areas */
 h1 {
 	width: 100%;
 	margin: 20px 0px;
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 h2 {
 	width: 100%;
 	margin: 20px 0px;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 p {
 	margin: 20px 0px;
 	padding: 0px 20px;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 /* Special card styles */
