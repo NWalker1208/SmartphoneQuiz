@@ -26,7 +26,7 @@ div {
 
 /* Cards */
 .card, .card-1, .card-2, .card-3, .card-4, .card-5 {
-	margin: 30px;
+	margin: 20px;
 	overflow: auto;
 }
 
@@ -62,20 +62,20 @@ div {
 
 /* Text areas */
 h1 {
-	margin: 30px;
+	margin: 20px;
 	text-align: center;
 	font-size: 2.5em;
 }
 
 h2 {
-	margin: 30px;
+	margin: 20px;
 	text-align: center;
 	font-size: 1.5em;
 }
 
 p {
-	margin: 30px;
-	font-size: 1.1em;
+	margin: 20px;
+	font-size: 1em;
 }
 
 /* Special card styles */
