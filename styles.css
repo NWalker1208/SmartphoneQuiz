@@ -10,8 +10,9 @@
 
 /* Grey 200 */
 body {
-	background-color: #EEEEEE;
 	margin: 0px;
+	
+	background-color: #EEEEEE;
 }
 
 body>div {

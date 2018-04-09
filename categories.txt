@@ -1,0 +1,31 @@
+Potential Categories:
+- Features (Number of primary features that stand out from others and are reasonably useful)
+- Battery (Ranked from https://youtu.be/FcfQdXgGm4w?t=123)
+- Camera (DxO Mark)
+- Entertainment (PPI * max speaker volume [decibels, https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php Voice dB])
+- Performance (gaming, editing, streaming, etc.) (max LTE download speed * Geekbench single core)
+- Aesthetics (Ranked by user)
+- Customizability (Arbitrary)
+- Ease of use/simplicity (Arbitrary)
+- VR Readiness (Arbitrary)
+
+Brands to score:
+- Apple
+- Google
+- Samsung (S9 Plus)
+- I'm not familiar with enough other brands to make reasonable judgements
+
+Scores are calculated by comparing each phones raw score to the range of min to max, 0 = min, 10 = max.
+Raw Scores:
+- Apple (iPhone X)
+	- Features: +Animoji, +Face ID, +iMessages = 3
+	- Battery: 601 minutes
+	- Camera: DxO mark = 97
+	- Entertainment: 458 ppi * 68.9 dB = 31556.2
+	- Performance: 600 Mbps * 4205 = 2523000
+	- Customizability: (iOS) No icon editing, no modification of layout, no themeing = 0
+	- Ease of use/simplicity: Gesture based (-), simple settings (+), separation from OS (+) = 1
+	- VR Readiness: Only cardboard compatible = 0
+	
+- Google (Pixel 2 XL)
+	
