@@ -11,12 +11,11 @@
 /* Grey 200 */
 body {
 	margin: 0px;
-	
 	background-color: #EEEEEE;
 }
 
 body>div {
-	max-width: 600px;
+	max-width: 750px;
 	margin: 0px auto;
 	background-color: transparent;
 }
@@ -27,7 +26,7 @@ div {
 
 /* Cards */
 .card, .card-1, .card-2, .card-3, .card-4, .card-5 {
-	margin: 20px;
+	margin: 20px 10px;
 	overflow: auto;
 }
 
@@ -62,20 +61,21 @@ div {
 /* End copied code */
 
 /* Text areas */
-h1 {
+h1, h2, p {
 	margin: 20px;
+}
+
+h1 {
 	text-align: center;
 	font-size: 2.5em;
 }
 
 h2 {
-	margin: 20px;
 	text-align: center;
 	font-size: 1.5em;
 }
 
 p {
-	margin: 20px;
 	font-size: 1em;
 }
 
