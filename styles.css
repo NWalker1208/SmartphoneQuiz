@@ -1,13 +1,18 @@
 /* Color palette based on https://material.io/guidelines/style/color.html#color-color-palette */
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* Grey 200 */
 body {
 	background-color: #EEEEEE;
-	margin: 20px;
 }
 
 body>div {
-	width: 600px;
+	max-width: 600px;
 	margin: 0px auto;
 	background-color: transparent;
 }
