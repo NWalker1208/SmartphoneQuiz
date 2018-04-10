@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
 	<question category="features">
-		<text>If a interesting question came up in a conversion, and no one knew the answer, would you prefer to...</text>
-		<choice value="0">Discuss the question to find the most likely answer</choice>
-		<choice value="1">Search the Internet for the question to find a more definite answer</choice>
-		<choice value="2">Ask a digital assistant (Siri, Google Assistant, etc.) to find a quick answer</choice>
+		<q>If a interesting question came up in a conversion, and no one knew the answer, would you prefer to...</q>
+		<a value="0">Discuss the question to find the most likely answer</a>
+		<a value="1">Search the Internet for the question to find a more definite answer</a>
+		<a value="2">Ask a digital assistant (Siri, Google Assistant, etc.) to find a quick answer</a>
 	</question>
 
 	<question category="features">
-		<text>When paying for things at the store, given the choice, would you prefer to...</text>
-		<choice value="0">Use cash because it's simpler to keep a budget</choice>
-		<choice value="1">Use a credit card because it's easier</choice>
-		<choice value="2">Use your phone because it's faster</choice>
+		<q>When paying for things at the store, given the choice, would you prefer to...</q>
+		<a value="0">Use cash because it's simpler to keep a budget</a>
+		<a value="1">Use a credit card because it's easier</a>
+		<a value="2">Use your phone because it's faster</a>
 	</question>
 </quiz>

@@ -17,19 +17,29 @@ xmlhttp.send();
 
 function convertXMLQuestionsToObjects(xml)
 {
-	var temp_questions = [
-		{'text': 'Test', 'category': 'features', 'choices': [
-			{'text': 'A', 'value': 0},
-			{'text': 'B', 'value': 1},
-			{'text': 'C', 'value': 2}]
-		},
-		{'text': 'Test Again', 'category': 'features', 'choices': [
-			{'text': '1', 'value': 0},
-			{'text': '2', 'value': 1}]
+	var questionObjects = [];
+	
+	var questionsXML = xml.getElementsByTagName("question");
+	for (var q = 0; q < questionsXML.length; q++)
+	{
+		var questionObject = {};
+		questionObject.text = questionsXML[q].getElementsByTagName("q")[0].textContent;
+		questionObject.category = questionsXML[q].attributes.category.textContent;
+		questionObject.choices = [];
+		
+		var choicesXML = questionsXML[q].getElementsByTagName("a");
+		for (var a = 0; a < choicesXML.length; a++)
+		{
+			var choiceObject = {};
+			choiceObject.text = choicesXML[a].textContent;
+			choiceObject.value = choicesXML[a].attributes.value.textContent;
+			questionObject.choices.push(choiceObject);
 		}
-	];
+		
+		questionObjects.push(questionObject);
+	}
 
-	return temp_questions;
+	return questionObjects;
 }
 
 function addQuestionsToQuiz(questions)
