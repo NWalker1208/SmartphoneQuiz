@@ -55,7 +55,7 @@ Raw Scores:
 	- Value: $839 = -839
 	
 	- Features: Samsung Pay (with MST), Bixby AR tools, headphone jack, Doblty Atmos surround sound simulation, always on display,
-	            fast charger included, AKG headphones included = 7
+	            fast charger included, AKG headphones included, iris scanning = 8
 	- Customizability: Icon packs with third party apps (1), widget support (2), small selection of themes (1) = 4
 	- Ease of use/simplicity: Straightforward interface (back/multitask/home buttons) (+), comples settings (-), deep OS access to user (-) = -1
 	- VR: Google Cardboard, Google Daydream, Samsung Gear VR = 3

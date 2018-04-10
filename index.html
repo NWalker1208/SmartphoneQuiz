@@ -19,80 +19,40 @@
 		<div class="card-1">
 			<p>Currently under development.</p>
 		</div>
-			
-			<div class="card-1 question">
-				<div class="card-1 question-header">
-					<h2>Question 1</h2>
-				</div>
-				
-				<p>If your computer started having issues, would you...</p>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Try to fix the problem yourself</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Have someone else fix it for you</p>
-				</div>
-			</div>
-			
-			<div class="card-1 question">
-				<div class="card-1 question-header">
-					<h2>Question 2</h2>
-				</div>
-				
-				<p>How often do you take and share photos?</p>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Constantly</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Almost every day</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Once a week at most</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Rarely or never</p>
-				</div>
-			</div>
-			
-			<div class="card-1 question">
-				<div class="card-1 question-header">
-					<h2>Question 3</h2>
-				</div>
-				
-				<p>How often do you watch Netflix or YouTube on your phone?</p>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>All the time</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>When there's time for it</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>When I'm bored</p>
-				</div>
-				
-				<div class="card-2 card-hoverable choice">
-					<p>Rarely or never</p>
-				</div>
-			</div>
-			
-			<div class="card-2 card-hoverable" id="submit">
-				<p>Calculate Results</p>
-			</div>
+		
+		<div class="card-2 card-hoverable" id="submit">
+			<p>Calculate Results</p>
+		</div>
 		
 		<div class="card card-2 card-hoverable" id="footer" onclick="window.location='https://github.com/NWalker1208';">
 			<p>Written and designed by Nathan Walker</p>
-			<p style="font-size: 0.8em">All trademarks belong to their respective owners.<br>This website is open source and the results are intended for recreation only.</p>
+			<p style="font-size: 0.8em">All trademarks belong to their respective owners.<br>
+			This website is open source and the results are intended for recreation only.</p>
 		</div>
 	</div>
+	
+	<!-- Templates -->
+	<template id="question-template">
+		<div class="card-1 question">
+			<div class="card-1 question-header">
+				<h2>Question #</h2>
+			</div>
+			
+			<p class="question-text">Question text</p>
+			
+			<!-- Choices go here -->
+		</div>
+	</template>
+	
+	<template id="choice-template">
+		<div class="card-2 card-hoverable choice">
+			<p>Choice text</p>
+		</div>
+	</template>
+	
+	<!-- Scripts -->
+	<script src="quiz.js"></script>
+	<script src="calculator.js"></script>
 	
 	<script>
 		$('.choice').click(function()
@@ -101,9 +61,6 @@
 			$(this).addClass('selected');
 		});
 	</script>
-	
-	<script src="quiz.js"></script>
-	<script src="calculator.js"></script>
 </body>
 
 </html>
