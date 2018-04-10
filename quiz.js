@@ -9,8 +9,15 @@ xmlhttp.onreadystatechange = function()
 	{
 		var questions = convertXMLQuestionsToObjects(this.responseXML);
 		addQuestionsToQuiz(questions);
+		
+		$('.choice').click(function()
+		{
+			$(this).parent().find('.choice').removeClass('selected');
+			$(this).addClass('selected');
+		});
 	}
 };
+
 xmlhttp.open("GET", "questions.xml", true);
 xmlhttp.send();
 
