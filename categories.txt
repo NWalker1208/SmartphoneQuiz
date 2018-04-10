@@ -1,31 +1,63 @@
 Potential Categories:
-- Features (Number of primary features that stand out from others and are reasonably useful)
-- Battery (Ranked from https://youtu.be/FcfQdXgGm4w?t=123)
-- Camera (DxO Mark)
-- Entertainment (PPI * max speaker volume [decibels, https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php Voice dB])
-- Performance (gaming, editing, streaming, etc.) (max LTE download speed * Geekbench single core)
-- Aesthetics (Ranked by user)
-- Customizability (Arbitrary)
-- Ease of use/simplicity (Arbitrary)
-- VR Readiness (Arbitrary)
+- Features: 1 point for each feature that stands out from others and is reasonably useful
+- Battery: Ranked from https://youtu.be/FcfQdXgGm4w?t=123
+- Camera: DxO Mark
+- Entertainment: (PPI * max speaker volume) ^ (1/2)
+	- https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php (Music, dB)
+- Performance: (Average app opening time * Average game opening time) ^ (1/2)
+	- https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/
+- Aesthetics: Ranked by user
+- Customizability: 0 to 2 points for each:
+	- Homescreen icons, widgets, and OS theme
+- Ease of use/simplicity: -1 to 1 points for each:
+	- Gesture based/straightforward interface, complex/simple settings, deep access/protected access to OS
+- VR: 1 point for each compatible platform
+- Value: Negative of starting cost
 
 Brands to score:
 - Apple
 - Google
-- Samsung (S9 Plus)
+- Samsung
 - I'm not familiar with enough other brands to make reasonable judgements
 
 Scores are calculated by comparing each phones raw score to the range of min to max, 0 = min, 10 = max.
 Raw Scores:
 - Apple (iPhone X)
-	- Features: +Animoji, +Face ID, +iMessages = 3
-	- Battery: 601 minutes
-	- Camera: DxO mark = 97
-	- Entertainment: 458 ppi * 68.9 dB = 31556.2
-	- Performance: 600 Mbps * 4205 = 2523000
-	- Customizability: (iOS) No icon editing, no modification of layout, no themeing = 0
-	- Ease of use/simplicity: Gesture based (-), simple settings (+), separation from OS (+) = 1
-	- VR Readiness: Only cardboard compatible = 0
+	- Battery: 601 minutes = 601
+	- Camera: 97
+	- Entertainment: (458 ppi * 74.0 dB) ^ (1/2) = 184.1
+	- Performance: (3.25 seconds * 7.67 seconds) ^ (1/2) = 5.0
+	- Value: $999.00 = -999
+	
+	- Features: Animoji, FaceID, iMessages, long-term update support = 4
+	- Customizability: No icon customization (0), no widgets (0), no themeing (0) = 0
+	- Ease of use/simplicity: Gesture based (~), simple settings (+), OS protected from user (+) = 2
+	- VR: Google Cardboard = 1
 	
 - Google (Pixel 2 XL)
+	- Battery: 700 minutes = 700
+	- Camera: 98
+	- Entertainment: (441 ppi * 77.0 dB) ^ (1/2) = 184.3
+	- Performance: (1.38 seconds * 12.65 seconds) ^ (1/2) = 4.2
+	- Value: $849 = -849
 	
+	- Features: Google Lense, unlimited Google Photos storage, stock Android, always on display,
+	            background music identification, Google Assistant integration, quick Android updates = 7
+	- Customizability: Icon packs with third party apps (1), widget support (2), no themeing (0) = 3
+	- Ease of use/simplicity: Straightforward interface (back/multitask/home buttons) (+), moderately complex settings (~), deep OS access to user (-) = 0
+	- VR: Google Cardboard, Google Daydream = 2
+	
+- Samsung (S9 Plus)
+	- Battery: 796 minutes = 796
+	- Camera: 99
+	- Entertainment: (529 ppi * 74.3 dB) ^ (1/2) = 198.3
+	- Performance: (1.55 seconds * 9.52 seconds) ^ (1/2) = 3.3
+	- Value: $839 = -839
+	
+	- Features: Samsung Pay (with MST), Bixby AR tools, headphone jack, Doblty Atmos surround sound simulation, always on display,
+	            fast charger included, AKG headphones included = 7
+	- Customizability: Icon packs with third party apps (1), widget support (2), small selection of themes (1) = 4
+	- Ease of use/simplicity: Straightforward interface (back/multitask/home buttons) (+), comples settings (-), deep OS access to user (-) = -1
+	- VR: Google Cardboard, Google Daydream, Samsung Gear VR = 3
+	
+Scores are scaled by scripts to a scale of 0 to 10, with the minumum score at 0 and max at 10
