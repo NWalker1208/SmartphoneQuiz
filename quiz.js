@@ -9,12 +9,6 @@ xmlhttp.onreadystatechange = function()
 	{
 		var questions = convertXMLQuestionsToObjects(this.responseXML);
 		addQuestionsToQuiz(questions);
-		
-		$('.choice').click(function()
-		{
-			$(this).parent().find('.choice').removeClass('selected');
-			$(this).addClass('selected');
-		});
 	}
 };
 
@@ -43,23 +37,37 @@ function addQuestionsToQuiz(questions)
 	for (var i = 0; i < questions.length; i++)
 	{
 		var question = questions[i];
-		var questionElement = questionTemplate.cloneNode(true);
-		console.log(questionElement);
-		questionElement.querySelector('.question').setAttribute("data-category", question.category);
-		questionElement.querySelector('.question-header>h2').innerText = "Question " + (i + 1);
-		questionElement.querySelector('.question-text').innerText = question.text;
+		var tmp = questionTemplate.cloneNode(true);
+		var questionElement = tmp.querySelector('.question');
 		
-		console.log(questionElement);
+		tmp.querySelector('.question-header>h2').innerText = "Question " + (i + 1);
+		tmp.querySelector('.question-text').innerText = question.text;
 		
+		questionElement.setAttribute("data-category", question.category);
 		for (var j = 0; j < question.choices.length; j++)
 		{
 			var choice = question.choices[j];
-			var choiceElement = choiceTemplate.cloneNode(true);
-			choiceElement.querySelector('.choice').setAttribute("data-value", choice.value);
-			choiceElement.querySelector('.choice>p').innerText = choice.text;
-			questionElement.querySelector('.question').appendChild(choiceElement);
+			var tmp2 = choiceTemplate.cloneNode(true);
+			var choiceElement = tmp2.querySelector('.choice');
+			
+			tmp2.querySelector('.choice>p').innerText = choice.text;
+			
+			choiceElement.setAttribute("data-value", choice.value);
+			choiceElement.onclick = function()
+			{
+				// Remove selected class from siblings
+				var siblings = this.parentNode.querySelectorAll('.choice');
+				for (var s = 0; s < siblings.length; s++)
+				{
+					siblings[s].classList.remove("selected");
+				}
+				// Add selected class to self
+				this.classList.add("selected");
+			};
+			
+			questionElement.appendChild(tmp2);
 		}
 		
-		submitButton.parentNode.insertBefore(questionElement, submitButton);
+		submitButton.parentNode.insertBefore(tmp, submitButton);
 	}
 }
