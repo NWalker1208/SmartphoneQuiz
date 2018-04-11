@@ -8,6 +8,8 @@
 	<link rel="icon" href="favicon.png">
 	
 	<link rel="stylesheet" href="styles.css">
+	<script src="quiz.js"></script>
+	<script src="calculator.js"></script>
 </head>
 
 <body>
@@ -21,9 +23,17 @@
 			<p>Currently under development.</p>
 		</div>
 		
-		<div class="card-2 card-hoverable" id="submit">
+		<div class="card-2 card-hoverable" id="submit" onclick="getResults()">
 			<p>Calculate Results</p>
 		</div>
+		
+		<!--<div class="card-1 hidden" id="results-card">
+			<div class="card-1 card-header" id="results-header">
+				<h2>Results</h2>
+			</div>
+			
+			<p>Not yet implemented</p>
+		</div>-->
 		
 		<div class="card card-2 card-hoverable" id="footer" onclick="window.location='https://github.com/NWalker1208';">
 			<p>Written and designed by Nathan Walker</p>
@@ -37,7 +47,7 @@
 	<!-- Templates -->
 	<template id="question-template">
 		<div class="card-1 question">
-			<div class="card-1 question-header">
+			<div class="card-1 card-header question-header">
 				<h2>Question #</h2>
 			</div>
 			
@@ -48,13 +58,25 @@
 	</template>
 	
 	<template id="choice-template">
-		<div class="card-2 card-hoverable choice">
+		<div class="card-2 card-hoverable choice" onclick="choiceClick(this)">
 			<p>Choice text</p>
 		</div>
 	</template>
 	
 	<!-- Scripts -->
-	<script src="quiz.js"></script>
-	<script src="calculator.js"></script>
+	<script>
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function()
+		{
+			if (this.readyState == 4 && this.status == 200)
+			{
+				var questions = convertXMLQuestionsToObjects(this.responseXML);
+				addQuestionsToQuiz(questions);
+			}
+		};
+
+		xmlhttp.open("GET", "questions.xml", true);
+		xmlhttp.send();										
+	</script>
 </body>
 </html>

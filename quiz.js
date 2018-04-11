@@ -1,20 +1,17 @@
-var questionTemplate = document.getElementById('question-template').content;
-var choiceTemplate = document.getElementById('choice-template').content;
-var submitButton = document.getElementById('submit');
-
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function()
+// Run by choice elements when they are clicked. Highlights the clicked choice and removes selection from others
+function choiceClick(c)
 {
-	if (this.readyState == 4 && this.status == 200)
+	// Remove selected class from siblings
+	var siblings = c.parentNode.querySelectorAll('.choice');
+	for (var s = 0; s < siblings.length; s++)
 	{
-		var questions = convertXMLQuestionsToObjects(this.responseXML);
-		addQuestionsToQuiz(questions);
+		siblings[s].classList.remove("selected");
 	}
-};
+	// Add selected class to self
+	c.classList.add("selected");
+}
 
-xmlhttp.open("GET", "questions.xml", true);
-xmlhttp.send();
-
+// Converts an XML document into an array of objects formatted as quiz questions
 function convertXMLQuestionsToObjects(xml)
 {
 	var questionObjects = [];
@@ -42,38 +39,31 @@ function convertXMLQuestionsToObjects(xml)
 	return questionObjects;
 }
 
+// Adds an array of quiz questions to the webpage
 function addQuestionsToQuiz(questions)
 {
+	var questionTemplate = document.getElementById('question-template').content;
+	var choiceTemplate = document.getElementById('choice-template').content;
+	var submitButton = document.getElementById('submit');
+
 	for (var i = 0; i < questions.length; i++)
 	{
 		var question = questions[i];
 		var tmp = questionTemplate.cloneNode(true);
 		var questionElement = tmp.querySelector('.question');
 		
+		questionElement.setAttribute("data-category", question.category);
 		tmp.querySelector('.question-header>h2').innerText = "Question " + (i + 1);
 		tmp.querySelector('.question-text').innerText = question.text;
 		
-		questionElement.setAttribute("data-category", question.category);
 		for (var j = 0; j < question.choices.length; j++)
 		{
 			var choice = question.choices[j];
 			var tmp2 = choiceTemplate.cloneNode(true);
 			var choiceElement = tmp2.querySelector('.choice');
 			
-			tmp2.querySelector('.choice>p').innerText = choice.text;
-			
 			choiceElement.setAttribute("data-value", choice.value);
-			choiceElement.onclick = function()
-			{
-				// Remove selected class from siblings
-				var siblings = this.parentNode.querySelectorAll('.choice');
-				for (var s = 0; s < siblings.length; s++)
-				{
-					siblings[s].classList.remove("selected");
-				}
-				// Add selected class to self
-				this.classList.add("selected");
-			};
+			tmp2.querySelector('.choice>p').innerText = choice.text;
 			
 			questionElement.appendChild(tmp2);
 		}
