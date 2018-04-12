@@ -1,14 +1,62 @@
+// Gets a list of responses from all questions
+function getResponses()
+{
+	var questionElements = document.getElementsByClassName("question");
+	var responses = [];
+	
+	for (var i = 0; i < questionElements.length; i++)
+	{
+		responses.push({"category": questionElements[i].getAttribute("data-category"),
+		                "value": null});
+		
+		var responseElements = questionElements[i].getElementsByClassName("selected");
+		
+		if (responseElements[0])
+		{
+			responses[i].value = responseElements[0].getAttribute("data-value");
+		}
+	}
+	
+	return responses;
+}
+
+function isQuizFinished()
+{
+	var responses = getResponses();
+	
+	var quizFinished = true;
+	for (var i = 0; i < responses.length && quizFinished; i++)
+	{
+		if (responses[i].value == null)
+			quizFinished = false;
+	}
+	
+	return quizFinished;
+}
+
 // Run by choice elements when they are clicked. Highlights the clicked choice and removes selection from others
 function choiceClick(c)
 {
+	if (c.classList.contains("unavailable"))
+		return;
+	
 	// Remove selected class from siblings
 	var siblings = c.parentNode.querySelectorAll('.choice');
 	for (var s = 0; s < siblings.length; s++)
 	{
 		siblings[s].classList.remove("selected");
 	}
+	
 	// Add selected class to self
 	c.classList.add("selected");
+	
+	// Check if quiz is finished
+	var submitButton = document.getElementById("submit");
+	if (submitButton.classList.contains("unavailable"))
+	{
+		if (isQuizFinished())
+			submitButton.classList.remove("unavailable");
+	}
 }
 
 // Converts an XML document into an array of objects formatted as quiz questions
@@ -69,5 +117,23 @@ function addQuestionsToQuiz(questions)
 		}
 		
 		submitButton.parentNode.insertBefore(tmp, submitButton);
+	}
+}
+
+function submitQuiz()
+{
+	if (isQuizFinished())
+	{
+		var choices = document.getElementsByClassName("choice");
+		for (var i = 0; i < choices.length; i++)
+			choices[i].classList.add("unavailable");
+		
+		hide(document.getElementById("submit"), 1, function()
+		{
+			setTimeout(function()
+			{
+				reveal(document.getElementById("results-card"), 1);
+			}, 200);
+		});
 	}
 }

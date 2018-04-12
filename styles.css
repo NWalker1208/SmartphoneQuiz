@@ -55,7 +55,7 @@ div {
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.card-hoverable:hover {
+.card-hoverable:hover:not(.unavailable) {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 /* End copied code */
@@ -95,6 +95,20 @@ p {
 	text-align: center;
 }
 
+/* Red 600 */
+#submit {
+	color: white;
+	background-color: #E53935;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* Grey 600 */
+#submit.unavailable {
+	background-color: #757575;
+}
+
 /* Indigo 600 */
 #results-header {
 	color: white;
@@ -120,11 +134,13 @@ p {
 	background-color: #7986CB;
 }
 
-/* Red 600 */
-#submit {
+/* Grey 600 */
+.choice.unavailable {
 	color: white;
-	background-color: #E53935;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: bold;
+	background-color: #757575;
+}
+
+/* Grey 500 */
+.choice.selected.unavailable {
+	background-color: #9E9E9E;
 }
