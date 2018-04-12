@@ -31,6 +31,10 @@ div {
 }
 
 /* Based on Material design at https://codepen.io/sdthornton/pen/wBZdXq */
+* {
+	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
 .card-1 {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -49,10 +53,6 @@ div {
 
 .card-5 {
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-.card-hoverable {
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .card-hoverable:hover {
@@ -113,7 +113,6 @@ p {
 .choice {
 	color: white;
 	background-color: #3F51B5;
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 /* Indigo 300 */
