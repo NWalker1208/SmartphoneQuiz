@@ -1,5 +1,5 @@
-var framerate = 60;
-var acceleration = 0.2;
+var interval = 5;
+var acceleration = 0.025;
 
 function updateReveal(el, lastHeightSet, speed, callback)
 {
@@ -10,7 +10,7 @@ function updateReveal(el, lastHeightSet, speed, callback)
 		setTimeout(function()
 		{
 			updateReveal(el, Math.round(lastHeightSet + speed), speed + acceleration, callback);
-		}, 1000.0 / framerate);
+		}, interval);
 	}
 	else
 	{
@@ -29,7 +29,7 @@ function reveal(el, speed, callback)
 	setTimeout(function()
 	{
 		updateReveal(el, 0, speed, callback);
-	}, 1000.0 / framerate);
+	}, interval);
 }
 
 function updateHide(el, lastHeightSet, speed, callback)
@@ -41,7 +41,7 @@ function updateHide(el, lastHeightSet, speed, callback)
 		setTimeout(function()
 		{
 			updateHide(el, Math.round(lastHeightSet - speed), speed + acceleration, callback);
-		}, 1000.0 / framerate);
+		}, interval);
 	}
 	else
 	{
@@ -60,5 +60,5 @@ function hide(el, speed, callback)
 	setTimeout(function()
 	{
 		updateHide(el, String(el.offsetHeight), speed, callback);
-	}, 1000.0 / framerate);
+	}, interval);
 }
