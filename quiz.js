@@ -128,11 +128,11 @@ function submitQuiz()
 		for (var i = 0; i < choices.length; i++)
 			choices[i].classList.add("unavailable");
 		
-		hide(document.getElementById("submit"), 0.25, function()
+		hide(document.getElementById("submit"), 0, function()
 		{
 			setTimeout(function()
 			{
-				reveal(document.getElementById("results-card"), 0.25);
+				reveal(document.getElementById("results-card"), 0);
 			}, 200);
 		});
 	}

@@ -1,5 +1,5 @@
 var interval = 5;
-var acceleration = 0.025;
+var acceleration = 0.05;
 
 function updateReveal(el, lastHeightSet, speed, callback)
 {
