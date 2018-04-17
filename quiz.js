@@ -20,6 +20,7 @@ function getResponses()
 	return responses;
 }
 
+// Returns true if quiz has been completed
 function isQuizFinished()
 {
 	var responses = getResponses();
@@ -59,34 +60,6 @@ function choiceClick(c)
 	}
 }
 
-// Converts an XML document into an array of objects formatted as quiz questions
-function convertXMLQuestionsToObjects(xml)
-{
-	var questionObjects = [];
-	
-	var questionsXML = xml.getElementsByTagName("question");
-	for (var q = 0; q < questionsXML.length; q++)
-	{
-		var questionObject = {};
-		questionObject.text = questionsXML[q].getElementsByTagName("q")[0].textContent;
-		questionObject.category = questionsXML[q].attributes.category.textContent;
-		questionObject.choices = [];
-		
-		var choicesXML = questionsXML[q].getElementsByTagName("a");
-		for (var a = 0; a < choicesXML.length; a++)
-		{
-			var choiceObject = {};
-			choiceObject.text = choicesXML[a].textContent;
-			choiceObject.value = choicesXML[a].attributes.value.textContent;
-			questionObject.choices.push(choiceObject);
-		}
-		
-		questionObjects.push(questionObject);
-	}
-
-	return questionObjects;
-}
-
 // Adds an array of quiz questions to the webpage
 function addQuestionsToQuiz(questions)
 {
@@ -120,6 +93,7 @@ function addQuestionsToQuiz(questions)
 	}
 }
 
+// Submits the quiz to the calculator and displays results
 function submitQuiz()
 {
 	if (isQuizFinished())

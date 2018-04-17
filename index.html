@@ -8,6 +8,7 @@
 	<link rel="icon" href="favicon.png">
 	
 	<link rel="stylesheet" href="styles.css">
+	<script src="xml.js"></script>
 	<script src="calculator.js"></script>
 	<script src="quiz.js"></script>
 	<script src="animate.js"></script>
@@ -64,20 +65,38 @@
 		</div>
 	</template>
 	
+	<template id="phone-template">
+		<div class="card-1">
+			<div class="card-1 phone-name">
+				<h2>Phone Name</h2>
+			</div>
+			
+			<!-- Scores go here -->
+		</div>
+	</template>
+	
+	<template id="phone-score-template">
+		<div class="card-1">
+			<p class="phone-score">Score: description</p>
+		</div>
+	</template>
+	
 	<!-- Scripts -->
 	<script>
-		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function()
+		// Get quiz questions
+		xmlRequest("quiz.xml", function(xml)
 		{
-			if (this.readyState == 4 && this.status == 200)
-			{
-				var questions = convertXMLQuestionsToObjects(this.responseXML);
-				addQuestionsToQuiz(questions);
-			}
-		};
-
-		xmlhttp.open("GET", "questions.xml", true);
-		xmlhttp.send();										
+			var questions = convertQuestionsXMLToObjectArray(xml);
+			addQuestionsToQuiz(questions);
+		});
+		
+		// Get brand rankings
+		xmlRequest("rankings.xml", function(xml)
+		{
+			console.log(xml);
+			var rankingInfo = convertBrandsXMLToObjectArray(xml);
+			console.log(rankingInfo);
+		});
 	</script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+// Uses an http request to get an XML file and passes that document to a function callback
+function xmlRequest(filename, callback)
+{
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function()
+	{
+		if (this.readyState == 4 && this.status == 200)
+		{
+			callback(this.responseXML)
+		}
+	};
+
+	xmlhttp.open("GET", filename, true);
+	xmlhttp.send();	
+}
+
+// Converts an XML document into an array of objects formatted as quiz questions
+function convertQuestionsXMLToObjectArray(xml)
+{
+	// Get list of questions
+	var questionsXML = xml.getElementsByTagName("question");
+	var questions = [];
+	
+	for (var q = 0; q < questionsXML.length; q++)
+	{
+		var questionXML = questionsXML[q];
+		var question = {};
+		
+		question.text = questionXML.getElementsByTagName("q")[0].textContent;
+		question.category = questionXML.attributes.category.textContent;
+		
+		// Get list of available choices
+		var choicesXML = questionXML.getElementsByTagName("a");
+		question.choices = [];
+		
+		for (var a = 0; a < choicesXML.length; a++)
+		{
+			var choiceXML = choicesXML[a];
+			var choice = {};
+			
+			choice.text = choiceXML.textContent;
+			choice.value = choiceXML.attributes.value.textContent;
+			question.choices.push(choice);
+		}
+		
+		questions.push(question);
+	}
+
+	return questions;
+}
+
+// Converts an XML document into an objects containing an array of categories and an array of phone options
+function convertBrandsXMLToObjectArray(xml)
+{	
+	// Get list of categories
+	var categoriesXML = xml.getElementsByTagName("category");
+	var categories = [];
+	
+	for (var c = 0; c < categoriesXML.length; c++)
+	{
+		var categoryXML = categoriesXML[c];
+		var category = {};
+		
+		category.name = categoryXML.attributes.name.textContent;
+		category.visibleName = categoryXML.textContent;
+		
+		categories.push(category);
+	}
+
+	// Get list of phones
+	var phonesXML = xml.getElementsByTagName("phone");
+	var phones = [];
+	
+	for (var p = 0; p < phonesXML.length; p++)
+	{
+		var phoneXML = phonesXML[p];
+		var phone = {};
+		
+		phone.brand = phoneXML.attributes.brand.textContent;
+		phone.model = phoneXML.attributes.model.textContent;
+		phone.scores = {};
+		
+		for (var c = 0; c < categories.length; c++)
+		{
+			var statXML = phoneXML.getElementsByTagName(categories[c].name)[0];
+			
+			if (statXML != null)
+			{
+				var stat = {};
+				
+				stat.description = statXML.textContent;
+				
+				if (statXML.attributes.score != null)
+					stat.score = statXML.attributes.score.textContent;
+				
+				phone.scores[categories[c].name] = stat;
+			}
+		}
+		
+		phones.push(phone);
+	}
+	
+	return {"categories": categories, "phones": phones};
+}

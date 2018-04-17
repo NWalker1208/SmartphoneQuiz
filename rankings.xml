@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rankings>
+	<categories>
+		<category name="features">Features</category>
+		<category name="battery">Battery Life</category>
+		<category name="camera">Camera Quality</category>
+		<category name="video">Dispaly Quality</category>
+		<category name="music">Sound Quality</category>
+		<category name="performance">Performance</category>
+		<category name="aesthetics">Aesthetics</category>
+		<category name="customizability">Customizability</category>
+		<category name="simplicity">Ease of Use and Simplicity</category>
+		<category name="vr">Virtual Reality Capabilities</category>
+		<category name="price">Price</category>
+	</categories>
+
+	<phones>
+		<phone brand="Apple" model="iPhone X">
+			<features score="4">Animoji, FaceID, iMessages, long-term update support</features>
+			<battery score="601">601 minutes</battery>
+			<camera score="97">DxO Mark of 97</camera>
+			<video score="0">Not finished</video>
+			<music score="0">Not finished</music>
+			<performance score="0">Not finished</performance>
+			<aesthetics>Not finished</aesthetics>
+			<customizability score="0">Not finished</customizability>
+			<simplicity score="0">Not finished</simplicity>
+			<vr score="0">Not finished</vr>
+			<price score="0">Not finished</price>
+		</phone>
+
+		<phone brand="Google" model="Pixel 2 XL">
+			<features score="0">Not finished</features>
+			<battery score="0">Not finished</battery>
+			<camera score="0">Not finished</camera>
+			<video score="0">Not finished</video>
+			<music score="0">Not finished</music>
+			<performance score="0">Not finished</performance>
+			<aesthetics>Not finished</aesthetics>
+			<customizability score="0">Not finished</customizability>
+			<simplicity score="0">Not finished</simplicity>
+			<vr score="0">Not finished</vr>
+			<price score="-849">849$</price>
+		</phone>
+
+		<phone brand="Samsung" model="Galaxy S9 Plus">
+			<features score="0">Not finished</features>
+			<battery score="0">Not finished</battery>
+			<camera score="0">Not finished</camera>
+			<video score="0">Not finished</video>
+			<music score="0">Not finished</music>
+			<performance score="0">Not finished</performance>
+			<aesthetics>Not finished</aesthetics>
+			<customizability score="0">Not finished</customizability>
+			<simplicity score="0">Not finished</simplicity>
+			<vr score="0">Not finished</vr>
+			<price score="-839">Not finished</price>
+		</phone>
+	</phones>
+</rankings>
