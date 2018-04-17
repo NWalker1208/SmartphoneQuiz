@@ -42,7 +42,7 @@ function choiceClick(c)
 		return;
 	
 	// Remove selected class from siblings
-	var siblings = c.parentNode.querySelectorAll('.choice');
+	var siblings = c.parentNode.querySelectorAll(".choice");
 	for (var s = 0; s < siblings.length; s++)
 	{
 		siblings[s].classList.remove("selected");
@@ -63,28 +63,28 @@ function choiceClick(c)
 // Adds an array of quiz questions to the webpage
 function addQuestionsToQuiz(questions)
 {
-	var questionTemplate = document.getElementById('question-template').content;
-	var choiceTemplate = document.getElementById('choice-template').content;
-	var submitButton = document.getElementById('submit');
+	var questionTemplate = document.getElementById("question-template").content;
+	var choiceTemplate = document.getElementById("choice-template").content;
+	var submitButton = document.getElementById("submit");
 
 	for (var i = 0; i < questions.length; i++)
 	{
 		var question = questions[i];
 		var tmp = questionTemplate.cloneNode(true);
-		var questionElement = tmp.querySelector('.question');
+		var questionElement = tmp.querySelector(".question");
 		
 		questionElement.setAttribute("data-category", question.category);
-		tmp.querySelector('.question-header>h2').innerText = "Question " + (i + 1);
-		tmp.querySelector('.question-text').innerText = question.text;
+		tmp.querySelector(".question-header>h2").innerText = "Question " + (i + 1);
+		tmp.querySelector(".question-text").innerText = question.text;
 		
 		for (var j = 0; j < question.choices.length; j++)
 		{
 			var choice = question.choices[j];
 			var tmp2 = choiceTemplate.cloneNode(true);
-			var choiceElement = tmp2.querySelector('.choice');
+			var choiceElement = tmp2.querySelector(".choice");
 			
 			choiceElement.setAttribute("data-value", choice.value);
-			tmp2.querySelector('.choice>p').innerText = choice.text;
+			tmp2.querySelector(".choice>p").innerText = choice.text;
 			
 			questionElement.appendChild(tmp2);
 		}

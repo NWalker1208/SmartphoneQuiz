@@ -66,7 +66,7 @@
 	</template>
 	
 	<template id="phone-template">
-		<div class="card-1">
+		<div class="card-1 phone-card">
 			<div class="card-1 phone-name">
 				<h2>Phone Name</h2>
 			</div>
@@ -76,7 +76,7 @@
 	</template>
 	
 	<template id="phone-score-template">
-		<div class="card-1">
+		<div class="card-1 phone-score-card">
 			<p class="phone-score">Score: description</p>
 		</div>
 	</template>
@@ -94,7 +94,7 @@
 		xmlRequest("rankings.xml", function(xml)
 		{
 			var rankingInfo = convertBrandsXMLToObjectArray(xml);
-			console.log(rankingInfo);
+			addPhonesToResults(rankingInfo.phones, rankingInfo.categories);
 		});
 	</script>
 </body>
