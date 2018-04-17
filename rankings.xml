@@ -16,45 +16,45 @@
 
 	<phones>
 		<phone brand="Apple" model="iPhone X">
-			<features score="4">Animoji, FaceID, iMessages, long-term update support</features>
-			<battery score="601">601 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)</battery>
-			<camera score="97">DxOMark of 97</camera>
-			<video score="6.4">Based on data from <a href="http://www.displaymate.com/iPhoneX_ShootOut_1a.htm">DisplayMate</a></video>
-			<music score="74">Peak volume of 74.0 dB based on <a href="https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php">this article</a></music>
-			<performance score="-5">Based on app opening time from <a href="https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/">here</a></performance>
-			<aesthetics><img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/x/iphone-x-select-2017?wid=189&hei=376&fmt=png-alpha&.v=1504378258086"></aesthetics>
-			<customizability score="0">No icon customization, no widgets, no themeing</customizability>
-			<simplicity score="2">Gesture based interface, simple settings, and OS is protected from user</simplicity>
-			<vr score="1">Compatible with Google Cardboard</vr>
-			<price score="-999">$999</price>
+			<features score="4"><![CDATA[Animoji, FaceID, iMessages, long-term update support]]></features>
+			<battery score="601"><![CDATA[601 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)]]></battery>
+			<camera score="97"><![CDATA[DxOMark of 97]]></camera>
+			<video score="6.4"><![CDATA[Based on data from <a href="http://www.displaymate.com/iPhoneX_ShootOut_1a.htm">DisplayMate</a>]]></video>
+			<music score="74"><![CDATA[Peak volume of 74.0 dB based on <a href="https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php">this article</a>]]></music>
+			<performance score="-5"><![CDATA[Based on app opening time from <a href="https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/">here</a>]]></performance>
+			<aesthetics><![CDATA[<img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/x/iphone-x-select-2017?wid=189&hei=376&fmt=png-alpha&.v=1504378258086">]]></aesthetics>
+			<customizability score="0"><![CDATA[No icon customization, no widgets, no themeing]]></customizability>
+			<simplicity score="2"><![CDATA[Gesture based interface, simple settings, and OS is protected from user]]></simplicity>
+			<vr score="1"><![CDATA[Compatible with Google Cardboard]]></vr>
+			<price score="-999"><![CDATA[$999]]></price>
 		</phone>
 
 		<phone brand="Google" model="Pixel 2 XL">
-			<features score="8">Google Lense, unlimited Google Photos storage, stock Android, always on display, background music identification, Google Assistant integration, quick Android updates, fingerprint scanner</features>
-			<battery score="700">700 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)</battery>
-			<camera score="98">DxOMark of 98</camera>
-			<video score="4.0">Data not available, though many reviewers claim it has very bad color shift and burn-in is common.</video>
-			<music score="77">Peak volume of 77.0 dB based on <a href="https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php">this article</a></music>
-			<performance score="-4.2">Based on app opening time from <a href="https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/">here</a></performance>
-			<aesthetics><img src="https://d2giyh01gjb6fi.cloudfront.net/default/0001/94/thumb_93299_default_big.jpeg"></aesthetics>
-			<customizability score="3">Icon packs with third party apps, widget support, no themeing</customizability>
-			<simplicity score="0">On-screen navigation buttons, moderately complex settings, and user has ability to modify deep system settings</simplicity>
-			<vr score="2">Compatible with Google Cardboard and Google Daydream</vr>
-			<price score="-849">$849</price>
+			<features score="8"><![CDATA[Google Lense, unlimited Google Photos storage, stock Android, always on display, background music identification, Google Assistant integration, quick Android updates, fingerprint scanner]]></features>
+			<battery score="700"><![CDATA[700 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)]]></battery>
+			<camera score="98"><![CDATA[DxOMark of 98]]></camera>
+			<video score="4.0"><![CDATA[Data not available, though many reviewers claim it has very bad color shift and burn-in is common.]]></video>
+			<music score="77"><![CDATA[Peak volume of 77.0 dB based on <a href="https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php">this article</a>]]></music>
+			<performance score="-4.2"><![CDATA[Based on app opening time from <a href="https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/">here</a>]]></performance>
+			<aesthetics><![CDATA[<img src="https://d2giyh01gjb6fi.cloudfront.net/default/0001/94/thumb_93299_default_big.jpeg">]]></aesthetics>
+			<customizability score="3"><![CDATA[Icon packs with third party apps, widget support, no themeing]]></customizability>
+			<simplicity score="0"><![CDATA[On-screen navigation buttons, moderately complex settings, and user has ability to modify deep system settings]]></simplicity>
+			<vr score="2"><![CDATA[Compatible with Google Cardboard and Google Daydream]]></vr>
+			<price score="-849"><![CDATA[$849]]></price>
 		</phone>
 
 		<phone brand="Samsung" model="Galaxy S9 Plus">
-			<features score="10">Samsung Pay (with MST), Bixby AR tools, headphone jack, Doblty Atmos surround sound simulation, always on display, Google Assistant integration, fast charger included, AKG headphones included, iris scanning, fingerprint scanner</features>
-			<battery score="796">796 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)</battery>
-			<camera score="99">DxOMark of 99</camera>
-			<video score="11.4">Based on data from <a href="http://www.displaymate.com/iPhoneX_ShootOut_1a.htm">DisplayMate</a></video>
-			<music score="74.3">Peak volume of 74.3 dB based on <a href="https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php">this article</a></music>
-			<performance score="-3.3">Based on app opening time from <a href="https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/">here</a></performance>
-			<aesthetics><img src="https://www.vodafone.co.uk/cs/groups/public/documents/images/vfcon088404.jpg"></aesthetics>
-			<customizability score="4">Icon packs with third party apps, widget support, small selection of themes</customizability>
-			<simplicity score="-1">On-screen navigation buttons, complex settings, and user has ability to modify deep system settings</simplicity>
-			<vr score="3">Compatible with Google Cardboard, Google Daydream, and Samsung Gear VR</vr>
-			<price score="-839">$839</price>
+			<features score="10"><![CDATA[Samsung Pay (with MST), Bixby AR tools, headphone jack, Doblty Atmos surround sound simulation, always on display, Google Assistant integration, fast charger included, AKG headphones included, iris scanning, fingerprint scanner]]></features>
+			<battery score="796"><![CDATA[796 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)]]></battery>
+			<camera score="99"><![CDATA[DxOMark of 99]]></camera>
+			<video score="11.4"><![CDATA[Based on data from <a href="http://www.displaymate.com/iPhoneX_ShootOut_1a.htm">DisplayMate</a>]]></video>
+			<music score="74.3"><![CDATA[Peak volume of 74.3 dB based on <a href="https://www.gsmarena.com/samsung_galaxy_s9-review-1734p3.php">this article</a>]]></music>
+			<performance score="-3.3"><![CDATA[Based on app opening time from <a href="https://theunlockr.com/2018/03/14/speed-test-galaxy-s9-plus-vs-iphone-x-vs-pixel-2-xl-vs-mate-10-pro-vs-oneplus-5t-vs-note8/">here</a>]]></performance>
+			<aesthetics><![CDATA[<img src="https://www.vodafone.co.uk/cs/groups/public/documents/images/vfcon088404.jpg">]]></aesthetics>
+			<customizability score="4"><![CDATA[Icon packs with third party apps, widget support, small selection of themes]]></customizability>
+			<simplicity score="-1"><![CDATA[On-screen navigation buttons, complex settings, and user has ability to modify deep system settings]]></simplicity>
+			<vr score="3"><![CDATA[Compatible with Google Cardboard, Google Daydream, and Samsung Gear VR]]></vr>
+			<price score="-839"><![CDATA[$839]]></price>
 		</phone>
 	</phones>
 </rankings>
