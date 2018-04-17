@@ -24,6 +24,12 @@ div {
 	background-color: white;
 }
 
+img {
+	max-width: 100%;
+	margin: 0px auto;
+	display: block;
+}
+
 /* Cards */
 .card, .card-1, .card-2, .card-3, .card-4, .card-5 {
 	margin: 20px 10px;
@@ -63,6 +69,11 @@ div {
 
 .card-header {
 	margin: 0px;
+}
+
+.phone-card {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* Text areas */

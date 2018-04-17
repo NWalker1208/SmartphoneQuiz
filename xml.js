@@ -82,6 +82,7 @@ function convertBrandsXMLToObjectArray(xml)
 		
 		for (var c = 0; c < categories.length; c++)
 		{
+			var category = categories[c];
 			var statXML = phoneXML.getElementsByTagName(categories[c].name)[0];
 			
 			if (statXML != null)
@@ -91,14 +92,38 @@ function convertBrandsXMLToObjectArray(xml)
 				stat.description = statXML.textContent;
 				
 				if (statXML.attributes.score != null)
-					stat.score = statXML.attributes.score.textContent;
+				{
+					stat.score = parseFloat(statXML.attributes.score.textContent);
+					
+					if (category.min == null || category.min > stat.score)
+						category.min = stat.score;
+					
+					if (category.max == null || category.max < stat.score)
+						category.max = stat.score;
+				}
 				
-				phone.scores[categories[c].name] = stat;
+				phone.scores[category.name] = stat;
 			}
 		}
 		
 		phones.push(phone);
 	}
+	
+	// Rescale scores to a scale of 1 to 10
+	for (var p = 0; p < phones.length; p++)
+	{
+		var phone = phones[p];
+		
+		for (var c = 0; c < categories.length; c++)
+		{
+			var category = categories[c];
+			
+			if (phone.scores[category.name].score != null)
+				phone.scores[category.name].score = 0.1 * Math.round(10 * (1 + 9 * (phone.scores[category.name].score - category.min) / (category.max - category.min)));
+		}
+	}
+	
+	console.log(categories);
 	
 	return {"categories": categories, "phones": phones};
 }

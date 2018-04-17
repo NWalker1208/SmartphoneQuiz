@@ -98,6 +98,8 @@ function submitQuiz()
 {
 	if (isQuizFinished())
 	{
+		getResults();
+		
 		var choices = document.getElementsByClassName("choice");
 		for (var i = 0; i < choices.length; i++)
 			choices[i].classList.add("unavailable");
