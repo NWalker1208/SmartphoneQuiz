@@ -29,8 +29,10 @@ function displayWinner(winner, winningCategories)
 		if (c < winningCategories.length - 1 && winningCategories.length > 2)
 			catText += ", ";
 		
-		if (c == winningCategories.length - 2)
+		if (c == winningCategories.length - 2 && winningCategories.length > 2)
 			catText += "and ";
+		else if (c == winningCategories.length - 2)
+			catText += " and ";
 	}
 	document.getElementById("winning-phone-categories").innerText = catText
 }
