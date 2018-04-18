@@ -131,7 +131,7 @@
 		<a value="1">iMac</a>
 		<a value="0">Windows</a>
 		<a value="0">I don't have a preference</a>
-		<a value="1">I don't have a home computer, so I don't know</a>
+		<a value="1">I don't use desktop or laptop computers</a>
 	</question>
 	
 	<question category="simplicity">

@@ -39,7 +39,10 @@ function convertQuestionsXMLToObjectArray(xml)
 			var choice = {};
 			
 			choice.text = choiceXML.textContent;
-			choice.value = choiceXML.attributes.value.textContent;
+			
+			if (choiceXML.attributes.value != null)
+				choice.value = choiceXML.attributes.value.textContent;
+			
 			question.choices.push(choice);
 		}
 		

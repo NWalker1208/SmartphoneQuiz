@@ -6,14 +6,14 @@ function getResponses()
 	
 	for (var i = 0; i < questionElements.length; i++)
 	{
-		responses.push({"category": questionElements[i].getAttribute("data-category"),
-		                "value": null});
+		responses.push({"category": questionElements[i].dataset.category,
+		                "value": "blank"});
 		
 		var responseElements = questionElements[i].getElementsByClassName("selected");
 		
 		if (responseElements[0])
 		{
-			responses[i].value = responseElements[0].getAttribute("data-value");
+			responses[i].value = responseElements[0].dataset.value;
 		}
 	}
 	
@@ -28,7 +28,7 @@ function isQuizFinished()
 	var quizFinished = true;
 	for (var i = 0; i < responses.length && quizFinished; i++)
 	{
-		if (responses[i].value == null)
+		if (responses[i].value == "blank")
 			quizFinished = false;
 	}
 	
@@ -83,7 +83,9 @@ function addQuestionsToQuiz(questions)
 			var tmp2 = choiceTemplate.cloneNode(true);
 			var choiceElement = tmp2.querySelector(".choice");
 			
-			choiceElement.setAttribute("data-value", choice.value);
+			if (choice.value != null)
+				choiceElement.setAttribute("data-value", choice.value);
+			
 			tmp2.querySelector(".choice>p").innerText = choice.text;
 			
 			questionElement.appendChild(tmp2);
