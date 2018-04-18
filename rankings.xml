@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rankings>
 	<categories>
+		<category name="price">Price</category>
 		<category name="features">Features</category>
 		<category name="battery">Battery Life</category>
 		<category name="camera">Camera Quality</category>
 		<category name="video">Display Quality</category>
 		<category name="music">Sound Quality</category>
 		<category name="performance">Performance</category>
-		<category name="aesthetics">Aesthetics</category>
 		<category name="customizability">Customizability</category>
 		<category name="simplicity">Ease of Use and Simplicity</category>
 		<category name="vr">Virtual Reality Capabilities</category>
-		<category name="price">Price</category>
+		<category name="aesthetics">Aesthetics</category>
 	</categories>
 
 	<phones>

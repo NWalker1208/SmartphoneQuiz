@@ -13,4 +13,149 @@
 		<a value="1">Use a credit card because it's easier</a>
 		<a value="2">Use your phone because it's faster</a>
 	</question>
+	
+	<question category="features">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="battery">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="battery">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="battery">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="camera">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="camera">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="camera">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="video">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="video">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="video">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="music">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="music">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="music">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="performance">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="performance">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="performance">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="customizability">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="customizability">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="customizability">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="simplicity">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="simplicity">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="simplicity">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="vr">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="vr">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="vr">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="price">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="price">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="price">
+		<q></q>
+		<a value="0"></a>
+	</question>
+	
+	<question category="aesthetics">
+		<q></q>
+		<a value="0"></a>
+	</question>
 </quiz>
