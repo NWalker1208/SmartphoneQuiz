@@ -34,7 +34,12 @@
 				<h2>Results</h2>
 			</div>
 			
-			<p>Not yet implemented</p>
+			<h3 style="text-align: center">And the winner is...</h3>
+			<h2 id="winning-phone">Make Model</h2>
+			<p id="winning-phone-categories" style="text-align: center">Top Categories: c1, c2, and c3</p>
+			<p id="winning-phone-score" style="text-align: center">Total Score: x</p>
+			
+			<p>Breakdown of phone scores in each category:</p>
 		</div>
 		
 		<div class="card card-2 card-hoverable" id="footer" onclick="window.location='https://github.com/NWalker1208';">
@@ -66,10 +71,8 @@
 	</template>
 	
 	<template id="phone-template">
-		<div class="card-1 phone-card">
-			<div class="card phone-name">
-				<h2>Phone Name</h2>
-			</div>
+		<div class="card-2 phone-card">
+			<h2 class="card phone-name">Phone Name</h2>
 			
 			<!-- Scores go here -->
 		</div>
@@ -92,7 +95,7 @@
 		// Get brand rankings
 		xmlRequest("rankings.xml", function(xml)
 		{
-			var rankingInfo = convertBrandsXMLToObjectArray(xml);
+			var rankingInfo = convertPhonesXMLToObjectArray(xml);
 			addPhonesToResults(rankingInfo.phones, rankingInfo.categories);
 		});
 	</script>

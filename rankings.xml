@@ -15,7 +15,7 @@
 	</categories>
 
 	<phones>
-		<phone brand="Apple" model="iPhone X">
+		<phone make="Apple" model="iPhone X">
 			<features score="4"><![CDATA[Animoji, FaceID, iMessages, long-term update support]]></features>
 			<battery score="601"><![CDATA[601 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)]]></battery>
 			<camera score="97"><![CDATA[DxOMark of 97]]></camera>
@@ -29,7 +29,7 @@
 			<price score="-999"><![CDATA[$999]]></price>
 		</phone>
 
-		<phone brand="Google" model="Pixel 2 XL">
+		<phone make="Google" model="Pixel 2 XL">
 			<features score="8"><![CDATA[Google Lense, unlimited Google Photos storage, stock Android, always on display, background music identification, Google Assistant integration, quick Android updates, fingerprint scanner]]></features>
 			<battery score="700"><![CDATA[700 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)]]></battery>
 			<camera score="98"><![CDATA[DxOMark of 98]]></camera>
@@ -43,8 +43,8 @@
 			<price score="-849"><![CDATA[$849]]></price>
 		</phone>
 
-		<phone brand="Samsung" model="Galaxy S9 Plus">
-			<features score="10"><![CDATA[Samsung Pay (with MST), Bixby AR tools, headphone jack, Doblty Atmos surround sound simulation, always on display, Google Assistant integration, fast charger included, AKG headphones included, iris scanning, fingerprint scanner]]></features>
+		<phone make="Samsung" model="Galaxy S9 Plus">
+			<features score="10"><![CDATA[Samsung Pay (with MST), Bixby AR tools, headphone jack, Dolby Atmos surround sound simulation, always on display, Google Assistant integration, fast charger included, AKG headphones included, iris scanning, fingerprint scanner]]></features>
 			<battery score="796"><![CDATA[796 minutes during battery drain test (<a href="https://youtu.be/FcfQdXgGm4w?t=123">See Video</a>)]]></battery>
 			<camera score="99"><![CDATA[DxOMark of 99]]></camera>
 			<video score="11.4"><![CDATA[Based on data from <a href="http://www.displaymate.com/Galaxy_S9_ShootOut_1s.htm">DisplayMate</a>]]></video>

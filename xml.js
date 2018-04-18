@@ -50,7 +50,7 @@ function convertQuestionsXMLToObjectArray(xml)
 }
 
 // Converts an XML document into an objects containing an array of categories and an array of phone options
-function convertBrandsXMLToObjectArray(xml)
+function convertPhonesXMLToObjectArray(xml)
 {	
 	// Get list of categories
 	var categoriesXML = xml.getElementsByTagName("category");
@@ -76,7 +76,7 @@ function convertBrandsXMLToObjectArray(xml)
 		var phoneXML = phonesXML[p];
 		var phone = {};
 		
-		phone.brand = phoneXML.attributes.brand.textContent;
+		phone.make = phoneXML.attributes.make.textContent;
 		phone.model = phoneXML.attributes.model.textContent;
 		phone.scores = {};
 		
@@ -122,8 +122,6 @@ function convertBrandsXMLToObjectArray(xml)
 				phone.scores[category.name].score = 0.1 * Math.round(10 * (1 + 9 * (phone.scores[category.name].score - category.min) / (category.max - category.min)));
 		}
 	}
-	
-	console.log(categories);
 	
 	return {"categories": categories, "phones": phones};
 }
