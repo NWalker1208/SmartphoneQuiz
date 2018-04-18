@@ -107,35 +107,42 @@
 		<a value="1">Frequently</a>
 	</question>
 	
-	<!--<question category="customizability">
-		<q></q>
-		<a value="0"></a>
+	<question category="customizability">
+		<q>Do you like to decorate your room or house?</q>
+		<a value="1">Yes</a>
+		<a value="0">No</a>
 	</question>
 	
 	<question category="customizability">
-		<q></q>
-		<a value="0"></a>
+		<q>Do you like to customize your car?</q>
+		<a value="1">Yes</a>
+		<a value="0">No</a>
+		<a>I don't have a car</a>
 	</question>
 	
 	<question category="customizability">
-		<q></q>
-		<a value="0"></a>
+		<q>Do you like to put stickers or other unique decorations on your stuff?</q>
+		<a value="1">Yes</a>
+		<a value="0">No</a>
 	</question>
 	
 	<question category="simplicity">
-		<q></q>
-		<a value="0"></a>
+		<q>Do you prefer the operating system of an iMac or a Windows PC?</q>
+		<a value="1">iMac</a>
+		<a value="0">Windows</a>
+		<a value="0">I don't have a preference</a>
+		<a value="1">I don't have a home computer, so I don't know</a>
 	</question>
 	
 	<question category="simplicity">
-		<q></q>
-		<a value="0"></a>
+		<q>Complete this sentence: "If my computer/device started having trouble, I would...</q>
+		<a value="2">Panic</a>
+		<a value="1">Have a friend/family member fix it</a>
+		<a value="0.75">Call customer support</a>
+		<a value="0.5">Ignore the issue</a>
+		<a value="0">Try to fix it yourself but probably fail</a>
+		<a value="-0.5">Try to fix it yourself and probably succeed</a>
 	</question>
-	
-	<question category="simplicity">
-		<q></q>
-		<a value="0"></a>
-	</question>-->
 	
 	<question category="vr">
 		<q>How interested are you in using virtual reality (VR)?</q>
