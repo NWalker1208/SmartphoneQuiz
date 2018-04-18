@@ -14,14 +14,19 @@ function getResults()
 function displayWinner(winner, winningCategories)
 {
 	document.getElementById("winning-phone").innerText = winner.make + " " + winner.model;
-	document.getElementById("winning-phone-score").innerText = "Total Score: " + winner.totalScore;
+	document.getElementById("winning-phone-score").innerText = "Total personalized score: " + winner.totalScore.toFixed(1);
 	
-	var catText = "Top Categories: ";
+	var catText = "Top categories: ";
 	for (var c = 0; c < winningCategories.length; c++)
 	{
-		catText += winningCategories[c].visibleName;
+		var categoryName = winningCategories[c].visibleName.toLowerCase()
 		
-		if (c < winningCategories.length - 1)
+		if (c == 0)
+			catText += categoryName[0].toUpperCase() + categoryName.substr(1);
+		else
+			catText += categoryName;
+		
+		if (c < winningCategories.length - 1 && winningCategories.length > 2)
 			catText += ", ";
 		
 		if (c == winningCategories.length - 2)
@@ -37,7 +42,7 @@ function getWinningCategories(weights, winner)
 	for (var c = 0; c < calc_categories.length; c++)
 	{
 		var category = calc_categories[c];
-		if (weights[category.name] > 1 && winner.scores[category.name].score > 5)
+		if (weights[category.name] > 0.5 && winner.scores[category.name].score > 5)
 		{
 			winningCategories.push(category);
 		}
@@ -56,7 +61,7 @@ function collectResponses()
 		var category = calc_categories[c].name;
 		responses[category] = [];
 		
-		var questionElements = document.querySelectorAll(".question[data-category=\"" + category + "\"] > .choice.selected");
+		var questionElements = document.querySelectorAll(".question[data-category~=\"" + category + "\"] > .choice.selected");
 		
 		for (var q = 0; q < questionElements.length; q++)
 		{

@@ -1,100 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
 	<question category="features">
-		<q>If a interesting question came up in a conversion, and no one knew the answer, would you prefer to...</q>
-		<a value="0">Discuss the question to find the most likely answer</a>
-		<a value="1">Search the Internet for the question to find a more definite answer</a>
-		<a value="2">Ask a digital assistant (Siri, Google Assistant, etc.) to find a quick answer</a>
+		<q>Rate your interest level in technology and innovation:</q>
+		<a value="0">I couldn't care less</a>
+		<a value="0.5">It's pretty cool, nice to haves</a>
+		<a value="1">I always want the latest technology</a>
 	</question>
 
 	<question category="features">
-		<q>When paying for things at the store, given the choice, would you prefer to...</q>
-		<a value="0">Use cash because it's simpler to keep a budget</a>
-		<a value="1">Use a credit card because it's easier</a>
-		<a value="2">Use your phone because it's faster</a>
+		<q>How important is privacy to you?</q>
+		<a value="0">It's necessary, either due to my career or just by preference</a>
+		<a value="0.5">As long as my data is anonymized so that I can't be identified, I'm fine</a>
+		<a value="1">I don't care about the data companies collect on me</a>
 	</question>
 	
 	<question category="features">
-		<q></q>
-		<a value="0"></a>
+		<q>Do you like to have technology do things for you?</q>
+		<a value="0">It doesn't matter to me</a>
+		<a value="0.5">It's helpful at times</a>
+		<a value="1">I'd rather have my computer do it than do it myself</a>
 	</question>
 	
 	<question category="battery">
-		<q></q>
-		<a value="0"></a>
+		<q>How often are you outdoors?</q>
+		<a value="0">I rarely/sometimes go outside</a>
+		<a value="0.5">I'm outside a lot of the time and/or I like to go camping/hiking</a>
+		<a value="1">I go camping/hiking often</a>
 	</question>
 	
-	<question category="battery">
-		<q></q>
-		<a value="0"></a>
+	<question category="battery performance">
+		<q>How often do you play videogames?</q>
+		<a value="0">I don't play videogames</a>
+		<a value="0.25">Only when I'm bored</a>
+		<a value="0.5">Pretty often</a>
+		<a value="1">All the time</a>
 	</question>
 	
-	<question category="battery">
-		<q></q>
-		<a value="0"></a>
-	</question>
-	
-	<question category="camera">
-		<q></q>
-		<a value="0"></a>
-	</question>
-	
-	<question category="camera">
-		<q></q>
-		<a value="0"></a>
+	<question category="battery display">
+		<q>How often do you watch streaming TV? (YouTube, Netflix, etc.)</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
 	<question category="camera">
-		<q></q>
-		<a value="0"></a>
+		<q>How often do you use social media?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
-	<question category="video">
-		<q></q>
-		<a value="0"></a>
+	<question category="camera">
+		<q>How often do you take photos?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
-	<question category="video">
-		<q></q>
-		<a value="0"></a>
+	<question category="camera">
+		<q>How often do you post videos on YouTube?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
-	<question category="video">
-		<q></q>
-		<a value="0"></a>
+	<question category="display">
+		<q>Do you have a TV at home?</q>
+		<a value="0">Yes, a very good one</a>
+		<a value="0.5">Yes, but it's not too great</a>
+		<a value="1">No, but I want one</a>
+		<a value="0">I choose not to have a TV</a>
 	</question>
 	
-	<question category="music">
-		<q></q>
-		<a value="0"></a>
+	<question category="audio">
+		<q>How often do you listen to music?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
-	<question category="music">
-		<q></q>
-		<a value="0"></a>
+	<question category="audio">
+		<q>How often are you in a loud environment?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
-	<question category="music">
-		<q></q>
-		<a value="0"></a>
+	<question category="audio display">
+		<q>How often do you watch videos with/show videos to friends or family?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
 	<question category="performance">
-		<q></q>
-		<a value="0"></a>
+		<q>How often do you use computers or mobile devices at work or school?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
 	<question category="performance">
-		<q></q>
-		<a value="0"></a>
+		<q>How often do you use video editing software?</q>
+		<a value="0">Never/Rarely</a>
+		<a value="0.5">Occasionally</a>
+		<a value="1">Frequently</a>
 	</question>
 	
-	<question category="performance">
-		<q></q>
-		<a value="0"></a>
-	</question>
-	
-	<question category="customizability">
+	<!--<question category="customizability">
 		<q></q>
 		<a value="0"></a>
 	</question>
@@ -122,40 +135,31 @@
 	<question category="simplicity">
 		<q></q>
 		<a value="0"></a>
-	</question>
+	</question>-->
 	
 	<question category="vr">
-		<q></q>
-		<a value="0"></a>
-	</question>
-	
-	<question category="vr">
-		<q></q>
-		<a value="0"></a>
-	</question>
-	
-	<question category="vr">
-		<q></q>
-		<a value="0"></a>
+		<q>How interested are you in using virtual reality (VR)?</q>
+		<a value="1">Very much so</a>
+		<a value="0.5">It seems interesting, but I don't care to much</a>
+		<a value="0">I dislike VR</a>
 	</question>
 	
 	<question category="price">
-		<q></q>
-		<a value="0"></a>
+		<q>How big is your budget for smartphones?</q>
+		<a value="2">Small, I need the cheapest phone possible</a>
+		<a value="1">Sizeable, but I prefer to spend as little money as possible</a>
+		<a value="0">Price doesn't matter to me</a>
 	</question>
 	
 	<question category="price">
-		<q></q>
-		<a value="0"></a>
+		<q>How often do you upgrade your devices?</q>
+		<a value="0">Once a year</a>
+		<a value="0.5">Once every couple of years</a>
+		<a value="1">Only when my devices stop working</a>
 	</question>
 	
-	<question category="price">
+	<!--<question category="aesthetics">
 		<q></q>
 		<a value="0"></a>
-	</question>
-	
-	<question category="aesthetics">
-		<q></q>
-		<a value="0"></a>
-	</question>
+	</question>-->
 </quiz>
